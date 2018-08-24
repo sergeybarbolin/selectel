@@ -3,10 +3,20 @@ doctype
 html(lang="ru")
 	head
 		meta(charset="utf-8")
-		title= "Тема"
+		title= "Тестовое задание Selectel"
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		meta(name="description" content="Описание")
+		meta(name="description" content="Тестовое задание Selectel")
 		link(rel="shortcut icon" href="imag/body/favicon.png")
+		link(href="css/libs.min.css" rel="stylesheet")
 		link(href="css/style.css" rel="stylesheet")
-		link(rel="css/libs.min.css" href="imag/body/favicon.png")
-	body
+	body(class="body")
+		.header
+			.container
+				.header__head
+					a.logo
+						svg(role="img" class="logo__img logo__img--color-white")
+							use(xlink:href="img/sprite.svg#logo")
+					a.phone-number(href="tel:+7 (800) 555-06-75")
+						svg(role="img" class="phone-number__icon phone-number__icon--color-white")
+							use(xlink:href="img/sprite.svg#phone-number__icon")
+						span.phone-number__number="+7 (800) 555-06-75"

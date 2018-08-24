@@ -47,3 +47,50 @@
   font-size: 16px;
   line-height: 24px;
 }
+.container {
+  width: 1165px;
+}
+.logo {
+  display: inline-block;
+  width: 112.52px;
+  height: 24px;
+}
+.logo__img {
+  width: 100%;
+  height: 100%;
+}
+.logo__img--color-white {
+  fill: #fff;
+}
+.phone-number {
+  text-decoration: none;
+  display: inline-block;
+}
+.phone-number__number {
+  font-size: 20px;
+  color: #fff;
+}
+.phone-number__icon {
+  width: 22px;
+  height: 22px;
+}
+.phone-number__icon--color-white {
+  fill: #fff;
+}
+.header {
+  position: absolute;
+  z-index: 10;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.header__head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
