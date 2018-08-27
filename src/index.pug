@@ -1,4 +1,4 @@
-include bemto.pug
+//- include bemto.pug
 doctype
 html(lang="ru")
 	head
@@ -10,13 +10,77 @@ html(lang="ru")
 		link(href="css/libs.min.css" rel="stylesheet")
 		link(href="css/style.css" rel="stylesheet")
 	body(class="body")
-		.header
+		header.header
 			.container
 				.header__head
-					a.logo
+					a.logo(href="https://selectel.ru/" target="_blank")
 						svg(role="img" class="logo__img logo__img--color-white")
 							use(xlink:href="img/sprite.svg#logo")
 					a.phone-number(href="tel:+7 (800) 555-06-75")
 						svg(role="img" class="phone-number__icon phone-number__icon--color-white")
 							use(xlink:href="img/sprite.svg#phone-number__icon")
 						span.phone-number__number="+7 (800) 555-06-75"
+
+		.slider
+			.slider__slides
+				.slider__slide.slider__slide--active
+						.slider__content.slider__content--data-store
+							.container
+								.title.title--color-white.title--slide Надежное, безопасное, удобное хранилище ваших данных
+								.text.text--color-white.text--slide Подходит для веб-приложений, хранения архивов, резервного копирования и раздачи статического контента.
+								a.button(href="https://selectel.ru/" target="_blank") Заказать
+				.slider__slide.slider__slide
+						.slider__content.slider__content--servers
+							.container
+								.title.title--color-white.title--slide Надежные серверы для проектов любой сложности
+								.text.text--color-white.text--slide Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.
+								a.button(href="https://selectel.ru/" target="_blank") Заказать
+				.slider__slide.slider__slide
+						.slider__content.slider__content--public-cloud
+							.container
+								.title.title--color-white.title--slide Публичное облако на базе технологий VMware с оплатой по потреблению
+								.text.text--color-white.text--slide Публичное облако на базе VMware позволяет быстро нарастить мощности вашего дата-центра без капитальных и организационных затрат с оплатой за потребляемые ресурсы. 
+								a.button(href="https://selectel.ru/" target="_blank") Заказать
+				.slider__slide.slider__slide
+						.slider__content.slider__content--server-equipment
+							.container
+								.title.title--color-white.title--slide Размещение серверного оборудования в дата‑центрах уровня надежности Tier III
+								.text.text--color-white.text--slide Размещение серверного оборудования (колокейшн) в современном дата-центре с уровнем надежности Tier III с гарантированным каналом связи с высокой пропускной способностью, бесперебойным питанием и необходимым охлаждением.
+								a.button(href="https://selectel.ru/" target="_blank") Заказать
+			.slider__dots
+			button.slider__control.slider__control--left#prevSlide prev
+			button.slider__control.slider__control--right#nextSlid next
+
+		section.section
+			.container
+				h1.title.title--section Доступные конфигурации
+				.table#table
+					svg(role="img" class="table__loader")
+							use(xlink:href="img/sprite.svg#loader")
+		
+		footer.footer
+			.container
+				.footer__inner
+					a.logo(href="https://selectel.ru/" target="_blank")
+						svg(role="img" class="logo__img logo__img--color-white")
+							use(xlink:href="img/sprite.svg#logo")
+					.socials
+						a.socials__link(target="_blank" href="https://vk.com/selectel")
+							svg(role="img" width="32px" height="18px" class="socials__ico")
+								use(xlink:href="img/sprite.svg#vk")
+						a.socials__link(target="_blank" href="https://www.facebook.com/selectel/")
+							svg(role="img" width="11px" height="24px" class="socials__ico")
+								use(xlink:href="img/sprite.svg#fb")
+						a.socials__link(target="_blank" href="https://twitter.com/selectel")
+							svg(role="img" width="28" height="24" class="socials__ico")
+								use(xlink:href="img/sprite.svg#twitter")
+						a.socials__link(target="_blank" href="https://habrahabr.ru/company/selectel/")
+							svg(role="img" width="22px" height="24px" class="socials__ico")
+								use(xlink:href="img/sprite.svg#hh")
+						a.socials__link(target="_blank" href="https://www.youtube.com/channel/UCVU0Ml1l_Y90wmy5EjWTSng")
+							svg(role="img" width="28px" height="20px" class="socials__ico")
+								use(xlink:href="img/sprite.svg#youtube")
+						a.socials__link(target="_blank" href="https://www.instagram.com/selectel.ru/")
+							svg(role="img" width="24px" height="24px" class="socials__ico")
+								use(xlink:href="img/sprite.svg#inst")
+			script(src="js/script.min.js")

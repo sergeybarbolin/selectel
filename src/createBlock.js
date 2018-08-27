@@ -11,7 +11,7 @@ const fs = require('fs');                // будем работать с фа�
 const mkdirp = require('mkdirp');        // зависимость, должна быть установлена (см. описание выше)
 
 let blockName = process.argv[2];          // получим имя блока
-let defaultExtensions = ['pug', 'styl']; // расширения по умолчанию
+let defaultExtensions = ['styl']; // расширения по умолчанию
 let extensions = uniqueArray(defaultExtensions.concat(process.argv.slice(3)));  // добавим введенные при вызове расширения (если есть)
 
 // Если есть имя блока
@@ -41,7 +41,7 @@ if(blockName) {
         // Если это styl
         if(extention == 'styl') {
           styleFileImport = '// @import \'../blocks/' + blockName + '/' + blockName + '.styl\';';
-          fileContent = styleFileImport + '\n\n\n.' + blockName + ' {\n  \n}\n';
+          fileContent = styleFileImport + '\n\n\n.' + blockName + '\n\n';
           fileCreateMsg = 'Для импорта стилей: ' + styleFileImport;
         }
 

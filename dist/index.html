@@ -10,9 +10,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <div class="container">
-        <div class="header__head"><a class="logo">
+        <div class="header__head"><a class="logo" href="https://selectel.ru/" target="_blank">
             <svg class="logo__img logo__img--color-white" role="img">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg></a><a class="phone-number" href="tel:+7 (800) 555-06-75">
@@ -20,6 +20,84 @@
               <use xlink:href="img/sprite.svg#phone-number__icon"></use>
             </svg><span class="phone-number__number">+7 (800) 555-06-75</span></a></div>
       </div>
+    </header>
+    <div class="slider">
+      <div class="slider__slides">
+        <div class="slider__slide slider__slide--active">
+          <div class="slider__content slider__content--data-store">
+            <div class="container">
+              <div class="title title--color-white title--slide">Надежное, безопасное, удобное хранилище ваших данных</div>
+              <div class="text text--color-white text--slide">Подходит для веб-приложений, хранения архивов, резервного копирования и раздачи статического контента.</div><a class="button" href="https://selectel.ru/" target="_blank">Заказать</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide slider__slide">
+          <div class="slider__content slider__content--servers">
+            <div class="container">
+              <div class="title title--color-white title--slide">Надежные серверы для проектов любой сложности</div>
+              <div class="text text--color-white text--slide">Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.</div><a class="button" href="https://selectel.ru/" target="_blank">Заказать</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide slider__slide">
+          <div class="slider__content slider__content--public-cloud">
+            <div class="container">
+              <div class="title title--color-white title--slide">Публичное облако на базе технологий VMware с оплатой по потреблению</div>
+              <div class="text text--color-white text--slide">Публичное облако на базе VMware позволяет быстро нарастить мощности вашего дата-центра без капитальных и организационных затрат с оплатой за потребляемые ресурсы. </div><a class="button" href="https://selectel.ru/" target="_blank">Заказать</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide slider__slide">
+          <div class="slider__content slider__content--server-equipment">
+            <div class="container">
+              <div class="title title--color-white title--slide">Размещение серверного оборудования в дата‑центрах уровня надежности Tier III</div>
+              <div class="text text--color-white text--slide">Размещение серверного оборудования (колокейшн) в современном дата-центре с уровнем надежности Tier III с гарантированным каналом связи с высокой пропускной способностью, бесперебойным питанием и необходимым охлаждением.</div><a class="button" href="https://selectel.ru/" target="_blank">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__dots"></div>
+      <button class="slider__control slider__control--left" id="prevSlide">prev</button>
+      <button class="slider__control slider__control--right" id="nextSlid">next</button>
     </div>
+    <section class="section">
+      <div class="container">
+        <h1 class="title title--section">Доступные конфигурации</h1>
+        <div class="table" id="table">
+          <svg class="table__loader" role="img">
+            <use xlink:href="img/sprite.svg#loader"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner"><a class="logo" href="https://selectel.ru/" target="_blank">
+            <svg class="logo__img logo__img--color-white" role="img">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg></a>
+          <div class="socials"><a class="socials__link" target="_blank" href="https://vk.com/selectel">
+              <svg class="socials__ico" role="img" width="32px" height="18px">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg></a><a class="socials__link" target="_blank" href="https://www.facebook.com/selectel/">
+              <svg class="socials__ico" role="img" width="11px" height="24px">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg></a><a class="socials__link" target="_blank" href="https://twitter.com/selectel">
+              <svg class="socials__ico" role="img" width="28" height="24">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg></a><a class="socials__link" target="_blank" href="https://habrahabr.ru/company/selectel/">
+              <svg class="socials__ico" role="img" width="22px" height="24px">
+                <use xlink:href="img/sprite.svg#hh"></use>
+              </svg></a><a class="socials__link" target="_blank" href="https://www.youtube.com/channel/UCVU0Ml1l_Y90wmy5EjWTSng">
+              <svg class="socials__ico" role="img" width="28px" height="20px">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg></a><a class="socials__link" target="_blank" href="https://www.instagram.com/selectel.ru/">
+              <svg class="socials__ico" role="img" width="24px" height="24px">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg></a></div>
+        </div>
+      </div>
+      <script src="js/script.min.js"></script>
+    </footer>
   </body>
 </html>

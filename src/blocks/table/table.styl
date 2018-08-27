@@ -1,0 +1,66 @@
+// @import '../blocks/table/table.styl'
+
+
+.table
+	&__loader
+		stroke #DD1212
+		margin auto
+		width 68px
+		height 68px
+		display block
+	&__error-load
+		text-align center
+		font-size 23px
+		font-weight 300
+	&__row
+		border 2px solid rgba(0, 0, 0, 0.8)
+		box-sizing border-box
+		border-radius 7px
+		font-size 18px
+		padding 22px 0
+		margin-bottom 24px
+		@media (max-width screen-sm)
+			line-height 24px
+			font-size 16px
+			padding: 20px 24px
+		&--head
+			padding 0
+			border none
+			margin-bottom 17px
+			& .table__cell
+				@media (max-width screen-md)
+					align-items end
+			span
+				opacity 0.8
+				font-size 16px
+				@media (max-width screen-sm)
+					display none
+	&__cell
+		display flex
+		height 100%
+		width 100%
+		align-items center
+		@media (max-width screen-sm)
+			align-items: start
+			flex-direction: column
+		&--first
+			padding-left 42px
+			@media (max-width screen-md)
+				padding-left 20px
+			@media (max-width screen-sm)
+				padding-left 0px
+				.table__cell-caption
+					margin: 0
+		&--last
+			justify-content right
+			padding-right 20px
+			@media (max-width screen-sm)
+				justify-content left
+				padding-right: 0
+				padding-top: 18px
+	&__cell-caption
+		margin 0
+		@media (min-width screen-sm)
+			display none
+		@media (max-width screen-sm)
+			margin-top: 16px

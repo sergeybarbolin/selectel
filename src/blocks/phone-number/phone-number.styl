@@ -4,11 +4,22 @@
 .phone-number
 	text-decoration none
 	display inline-block
+	transition transi-opacity
+	&:hover
+		opacity 0.6
 	&__number
-		font-size: 20px;
-		color: #fff;
+		font-size 20px
+		color #fff
+		font-weight 300
+		vertical-align middle
+		@media (max-width: screen-xs)
+			display none
 	&__icon
 			width 22px
 			height 22px
+			vertical-align middle
+			margin-right 13px
 			&--color-white
-				fill white
+				fill transparent
+				stroke #fff
+				stroke-width 1px
