@@ -6,7 +6,7 @@ html(lang="ru")
 		title= "Тестовое задание Selectel"
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		meta(name="description" content="Тестовое задание Selectel")
-		link(rel="shortcut icon" href="imag/body/favicon.png")
+		link(rel="shortcut icon" href="img/body/favicon.png")
 		link(href="css/libs.min.css" rel="stylesheet")
 		link(href="css/style.css" rel="stylesheet")
 	body(class="body")
@@ -16,40 +16,32 @@ html(lang="ru")
 					a.logo(href="https://selectel.ru/" target="_blank")
 						svg(role="img" class="logo__img logo__img--color-white")
 							use(xlink:href="img/sprite.svg#logo")
-					a.phone-number(href="tel:+7 (800) 555-06-75")
+					a.phone-number(href="tel:+7(800)555-06-75")
 						svg(role="img" class="phone-number__icon phone-number__icon--color-white")
 							use(xlink:href="img/sprite.svg#phone-number__icon")
 						span.phone-number__number="+7 (800) 555-06-75"
 
 		.slider
-			.slider__slides
-				.slider__slide.slider__slide--active
-						.slider__content.slider__content--data-store
-							.container
-								.title.title--color-white.title--slide Надежное, безопасное, удобное хранилище ваших данных
-								.text.text--color-white.text--slide Подходит для веб-приложений, хранения архивов, резервного копирования и раздачи статического контента.
-								a.button(href="https://selectel.ru/" target="_blank") Заказать
-				.slider__slide.slider__slide
-						.slider__content.slider__content--servers
-							.container
-								.title.title--color-white.title--slide Надежные серверы для проектов любой сложности
-								.text.text--color-white.text--slide Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.
-								a.button(href="https://selectel.ru/" target="_blank") Заказать
-				.slider__slide.slider__slide
-						.slider__content.slider__content--public-cloud
-							.container
-								.title.title--color-white.title--slide Публичное облако на базе технологий VMware с оплатой по потреблению
-								.text.text--color-white.text--slide Публичное облако на базе VMware позволяет быстро нарастить мощности вашего дата-центра без капитальных и организационных затрат с оплатой за потребляемые ресурсы. 
-								a.button(href="https://selectel.ru/" target="_blank") Заказать
-				.slider__slide.slider__slide
-						.slider__content.slider__content--server-equipment
-							.container
-								.title.title--color-white.title--slide Размещение серверного оборудования в дата‑центрах уровня надежности Tier III
-								.text.text--color-white.text--slide Размещение серверного оборудования (колокейшн) в современном дата-центре с уровнем надежности Tier III с гарантированным каналом связи с высокой пропускной способностью, бесперебойным питанием и необходимым охлаждением.
-								a.button(href="https://selectel.ru/" target="_blank") Заказать
-			.slider__dots
-			button.slider__control.slider__control--left#prevSlide prev
-			button.slider__control.slider__control--right#nextSlid next
+			.slider__slide.slider__slide--active.slider__slide--data-store
+				.container
+					.title.title--color-white.title--slide Надежное, безопасное, удобное хранилище ваших данных
+					.text.text--color-white.text--slide Подходит для веб-приложений, хранения архивов, резервного копирования и раздачи статического контента.
+					a.button(href="https://selectel.ru/" target="_blank") Заказать
+			.slider__slide.slider__slide--servers
+				.container
+					.title.title--color-white.title--slide Надежные серверы для проектов любой сложности
+					.text.text--color-white.text--slide Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.
+					a.button(href="https://selectel.ru/" target="_blank") Заказать
+			.slider__slide.slider__slide--public-cloud
+				.container
+					.title.title--color-white.title--slide Публичное облако на базе технологий VMware с оплатой по потреблению
+					.text.text--color-white.text--slide Публичное облако на базе VMware позволяет быстро нарастить мощности вашего дата-центра без капитальных и организационных затрат с оплатой за потребляемые ресурсы. 
+					a.button(href="https://selectel.ru/" target="_blank") Заказать
+			.slider__slide.slider__slide--server-equipment
+				.container
+					.title.title--color-white.title--slide Размещение серверного оборудования в дата‑центрах уровня надежности Tier III
+					.text.text--color-white.text--slide Размещение серверного оборудования (колокейшн) в современном дата-центре с уровнем надежности Tier III с гарантированным каналом связи с высокой пропускной способностью, бесперебойным питанием и необходимым охлаждением.
+					a.button(href="https://selectel.ru/" target="_blank") Заказать
 
 		section.section
 			.container

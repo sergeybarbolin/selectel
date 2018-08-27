@@ -29,7 +29,7 @@
 			margin-bottom 17px
 			& .table__cell
 				@media (max-width screen-md)
-					align-items end
+					align-items flex-end
 			span
 				opacity 0.8
 				font-size 16px
@@ -41,7 +41,7 @@
 		width 100%
 		align-items center
 		@media (max-width screen-sm)
-			align-items: start
+			align-items: flex-start
 			flex-direction: column
 		&--first
 			padding-left 42px
@@ -52,10 +52,14 @@
 				.table__cell-caption
 					margin: 0
 		&--last
-			justify-content right
+			justify-content flex-end
 			padding-right 20px
+			-webkit-justify-content: flex-end;
+			-moz-justify-content: flex-end;
+			-ms-justify-content: flex-end;
+			justify-content: flex-end;
 			@media (max-width screen-sm)
-				justify-content left
+				justify-content flex-start
 				padding-right: 0
 				padding-top: 18px
 	&__cell-caption

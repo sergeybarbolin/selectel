@@ -30,9 +30,9 @@ gulp.task('browser-sync', function () {
             baseDir: '../dist'
         },
         notify: false,
-        // open: false,
-        // online: false,
-        // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+        open: false,
+        online: false,
+        tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
     })
 }); 
 
@@ -68,7 +68,8 @@ gulp.task('js', function () {
 
     gulp.src([
         
-        // 'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/slick-carousel/slick/slick.min.js',
         'blocks/**/*.js'
         
         ])
