@@ -21,27 +21,7 @@ html(lang="ru")
 							use(xlink:href="img/sprite.svg#phone-number__icon")
 						span.phone-number__number="+7 (800) 555-06-75"
 
-		.slider
-			.slider__slide.slider__slide--active.slider__slide--data-store
-				.container
-					.title.title--color-white.title--slide Надежное, безопасное, удобное хранилище ваших данных
-					.text.text--color-white.text--slide Подходит для веб-приложений, хранения архивов, резервного копирования и раздачи статического контента.
-					a.button(href="https://selectel.ru/" target="_blank") Заказать
-			.slider__slide.slider__slide--servers
-				.container
-					.title.title--color-white.title--slide Надежные серверы для проектов любой сложности
-					.text.text--color-white.text--slide Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.
-					a.button(href="https://selectel.ru/" target="_blank") Заказать
-			.slider__slide.slider__slide--public-cloud
-				.container
-					.title.title--color-white.title--slide Публичное облако на базе технологий VMware с оплатой по потреблению
-					.text.text--color-white.text--slide Публичное облако на базе VMware позволяет быстро нарастить мощности вашего дата-центра без капитальных и организационных затрат с оплатой за потребляемые ресурсы. 
-					a.button(href="https://selectel.ru/" target="_blank") Заказать
-			.slider__slide.slider__slide--server-equipment
-				.container
-					.title.title--color-white.title--slide Размещение серверного оборудования в дата‑центрах уровня надежности Tier III
-					.text.text--color-white.text--slide Размещение серверного оборудования (колокейшн) в современном дата-центре с уровнем надежности Tier III с гарантированным каналом связи с высокой пропускной способностью, бесперебойным питанием и необходимым охлаждением.
-					a.button(href="https://selectel.ru/" target="_blank") Заказать
+		include blocks/slider/slider.pug
 
 		section.section
 			.container

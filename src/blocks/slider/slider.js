@@ -1,6 +1,6 @@
-$(window).load(function() {
-    $('.slider').css('visability', 'visible');
-});
+// $(window).load(function() {
+//     
+// });
 $(document).ready(function(){
     $('.slider').slick({
         autoplay: true,
@@ -15,3 +15,9 @@ $(document).ready(function(){
     });
 });
 
+function sliderInit() {
+    let slider = document.querySelector('.slider');
+    slider.classList.add('visible');
+}
+
+window.onload = sliderInit();

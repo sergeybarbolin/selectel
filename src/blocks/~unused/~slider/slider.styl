@@ -4,8 +4,8 @@
 	width 100%
 	height 600px
 	position relative
-	@media (max-width: screen-xs)
-		height: 568px;
+	@media (max-width screen-xs)
+		height 568px;
 	&__slide
 		position absolute
 		left 0
@@ -18,8 +18,10 @@
 		background-color black
 		&--active
 			opacity 1
-			z-index 2
+			z-index 99
 			transition opacity .6s
+			& .slider__content
+				z-index 99
 	&__content
 		position absolute
 		left 0
@@ -27,7 +29,7 @@
 		width 100%
 		height 100%
 		opacity 1
-		backface-visibility: hidden
+		backface-visibility hidden
 		&--data-store
 			background gradient-blue
 		&--servers
@@ -39,8 +41,26 @@
 	&__control
 		z-index 100
 		position absolute
+		display block
+		height 0
+		width 0
+		border-style solid
+		visibility hidden
+		bottom 35px
+		color transparent
+		font-size 0
+		line-height 0
+		padding 0
+		background transparent
+		cursor pointer
+		@media (max-width screen-xs)
+			visibility visible
 		&--left
-			left 0
+			border-width 13px 26px 13px 0
+			border-color transparent #ffffff transparent
+			left 22px;
 		&--right
-			right 0
+			border-width 13px 0 13px 26px;
+			border-color transparent #ffffff transparent
+			left 88px;
 

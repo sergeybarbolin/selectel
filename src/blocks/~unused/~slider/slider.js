@@ -33,11 +33,12 @@ var next = document.getElementById('nextSlid');
 var previous = document.getElementById('prevSlide');
 
 next.onclick = function(){
-    pauseSlideshow();
+    pauseSlideshow()
     nextSlide();
+    
 };
 previous.onclick = function(){
-    pauseSlideshow();
+    pauseSlideshow()
     previousSlide();
 };
 

@@ -67,7 +67,7 @@ gulp.task('styl', function () {
 gulp.task('js', function () {
 
     gulp.src([
-        
+        '!blocks/~unused/**/*.js',
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/slick-carousel/slick/slick.min.js',
         'blocks/**/*.js'
@@ -131,6 +131,7 @@ gulp.task('watch',
 		'browser-sync',
         'tinypng',
         'styl',
+        'js',
         'fonts',
         'pug'
 	], 
