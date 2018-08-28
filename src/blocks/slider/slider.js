@@ -1,4 +1,6 @@
-
+$(window).load(function() {
+    $('.slider').css('visability', 'visible');
+});
 $(document).ready(function(){
     $('.slider').slick({
         autoplay: true,
